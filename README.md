@@ -64,6 +64,6 @@ No modules.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_sg_arn"></a> [sg\_arn](#output\_sg\_arn) | Security Group ARN. |
-| <a name="output_sg_id"></a> [sg\_id](#output\_sg\_id) | Security Group Id. |
+| <a name="output_arn"></a> [arn](#output\_arn) | Security Group ARN. |
+| <a name="output_id"></a> [id](#output\_id) | Security Group Id. |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
