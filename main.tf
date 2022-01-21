@@ -1,7 +1,6 @@
 #https://registry.terraform.io/providers/hashicorp/aws/latest/docs
 locals {
   sg_name        = "${var.environment}-${var.sg_name}"
-  tf_version     = trimspace(chomp(file("./tf_version")))
   module_version = trimspace(chomp(file("./version")))
   last_update    = formatdate("YYYY-MM-DD hh:mm:ss", timestamp())
   tags = merge(var.tags, {
@@ -10,7 +9,6 @@ locals {
     application    = "${var.application}",
     module_name    = "terraform-aws-ec2-security-group",
     module_version = "${local.module_version}",
-    terraform      = "${local.tf_version}",
     last_update    = "${local.last_update}"
   })
 }
